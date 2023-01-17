@@ -9,8 +9,8 @@ description:        >
                     - sneakers <br>
                     - violin <br>
                     - video games
-readingtime:       true
-words_per_minute:   100
+readingtime:       false
+words_per_minute:   200
 pfp:                'assets/img/pfp.jpg'
 logo:               'assets/img/wloo.png'
 background:         'assets/img/cruise.jpg'
