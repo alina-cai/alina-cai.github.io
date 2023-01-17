@@ -16,6 +16,7 @@ GEM
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
     ffi (1.15.5)
+    ffi (1.15.5-x64-mingw-ucrt)
     forwardable-extended (2.6.0)
     html-pipeline (2.14.3)
       activesupport (>= 2)
@@ -58,6 +59,8 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
     multi_json (1.15.0)
+    nokogiri (1.14.0-x64-mingw-ucrt)
+      racc (~> 1.4)
     nokogiri (1.14.0-x86_64-linux)
       racc (~> 1.4)
     octokit (4.25.1)
@@ -84,6 +87,7 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
+  x64-mingw-ucrt
   x86_64-linux
 
 DEPENDENCIES
