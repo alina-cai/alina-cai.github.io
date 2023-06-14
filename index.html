@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ALINA CAI</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div class="top">
+      <div class="row padding navy">
+        <div class="col s3">
+          <a href="#" class="button block navy">home</a>
+        </div>
+        <div class="col s3">
+          <a href="#about" class="button block navy">about</a>
+        </div>
+        <div class="col s3">
+          <a href="#projects" class="button block navy">projects</a>
+        </div>
+        <div class="col s3">
+          <a href="assets/resume.pdf" class="button block navy">resume</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="bgimg display-container" id="home">
+      <div class="display-topmiddle center" style="margin-top: 18%">
+        <span class="text-white" style="font-size: 90px">alina cai</span>
+        <div class="padding margin-top">
+          <a href="https://linkedin.com/in/alina-cai" class="button navy margin-right">
+            <i class="fa-brands fa-linkedin-in fa-beat"></i>
+          </a>
+          <a href="https://github.com/alina-cai" class="button navy">
+            <i class="fa-brands fa-github fa-beat"></i>
+          </a>
+        </div>
+      </div>
+      <div class="display-bottomright center padding-large">
+        <span class="text-white">taken aboard an Alaskan cruise (2022)</span>
+      </div>
+      <div class="chevron">
+        <a href="#about" class="xxlarge text-white" onClick="scrollIntoView('about')">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </header>
+
+    <div class="pink grayscale large">
+      <div class="container" id="about">
+        <div class="content" style="max-width: 700px">
+          <h5 class="center padding-64">
+            <span class="tag wide blue-grey">about me</span>
+          </h5>
+          <div class="center-image-container">
+            <img src="/img/pfp.jpg" class="center-image margin-top" />
+          </div>
+          <p>
+            hi! i'm alina, a computer science student at the University of Waterloo.
+            i'm currently on my first co-op term as a software engineer at Bluwave-ai,
+            learning about the world of electric vehicles through machine learning.
+          </p>
+          <p><strong>semester:</strong> 2A (co-op) </p>
+          <p><strong>current courses:</strong> EARTH 123, PD 11</p>
+          <div class="panel leftbar blue-grey">
+            <p>my interests:</p>
+            <p>&gt; piano<br />&gt; violin<br />&gt; basketball<br />&gt; photography<br />&gt; video games<br /></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="projects">
+        <div class="content" style="max-width: 700px">
+          <h5 class="center padding-48">
+            <span class="tag wide blue-grey">projects</span>
+          </h5>
+          <h5><strong>digital art </strong><a href="/assets/art.md" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a></h5>
+          <i>adobe photoshop, adobe illustrator</i>
+          <p>
+            a collection of various art pieces i have created
+          </p>
+          <br />
+          <h5><strong>league of legends champion randomizer </strong><a href="https://github.com/alina-cai/lol-champion-randomizer" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a></h5>
+          <i>python, beautifulsoup, html, jupyter notebook</i>
+          <p>
+            a web application that randomly selects a single champion scraped from the LoL wiki
+          </p>
+          <br />
+          <h5><strong>snake </strong><a href="https://github.com/alina-cai/snake" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a></h5>
+          <i>python, pygame</i>
+          <p>
+            a snake game made from scratch
+          </p>
+          <br />
+          <h5><strong>NYC taxi fare predictor </strong><a href="https://github.com/alina-cai/nyc-taxi-fare" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a></h5>
+          <i>keras, tensorflow, lightgbm, numpy, pandas, matplotlib, scikit-learn</i>
+          <p>
+            a model trained to predict NYC taxi fares
+          </p>
+          <br />
+          <h5><strong>portfolio website </strong><a href="https://alina-cai.github.io/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a></h5>
+          <i>html, css, javascript</i>
+          <p>
+            a personal website that you're on right now!
+          </p>
+          <br />
+        </div>
+      </div>
+
+      <footer class="center blue-grey padding-48 large">
+        <p>
+          contact me:
+          <div class="padding margin-top">
+            <a href="mailto:alina.cai@uwaterloo.ca" class="button pink margin-right">
+              <i class="far fa-envelope fa-shake"></i>
+            </a>
+            <a href="discord:acai#6233" class="button pink">
+              <i class="fab fa-discord fa-shake"></i>
+            </a>
+          </div>
+        </p>
+      </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
