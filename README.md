@@ -1,4 +1,4 @@
-# alina-cai.github.io
+# alina-cai.me
 
 English | [中文](README_zh.md)
 
