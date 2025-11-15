@@ -104,12 +104,7 @@ window.addEventListener(
 window.addEventListener("resize", runScrollEffects);
 runScrollEffects();
 
-if (navToggle && navLinks) {
-  navToggle.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("is-open");
-    navToggle.setAttribute("aria-expanded", isOpen.toString());
-  });
-}
+// mobile nav menu removed on small screens per design; no toggle wiring needed
 
 const yearSpan = document.getElementById("year");
 if (yearSpan) {
