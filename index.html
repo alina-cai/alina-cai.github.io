@@ -1,138 +1,347 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark" class="no-js">
   <head>
-    <title>ALINA CAI</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <title>alina cai</title>
+    <meta
+      name="description"
+      content="alina cai"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&family=Gaegu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/custom.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
-    <div class="top">
-      <div class="row padding navy">
-        <div class="col s3">
-          <a href="#" class="button block navy">home</a>
+    <header class="hero" id="home">
+      <nav class="nav" data-animate>
+        <a class="nav__logo" href="#home">ac<span>.</span></a>
+        <div class="nav__links">
+          <a href="#home">home</a>
+          <a href="#about">about</a>
+          <a href="#experience">experience</a>
         </div>
-        <div class="col s3">
-          <a href="#about" class="button block navy">about</a>
+        <div class="nav__group">
+          <button class="theme-toggle" type="button" data-theme-toggle>
+            <span class="theme-toggle__icon" aria-hidden="true"></span>
+            <span class="theme-toggle__label">dark</span>
+          </button>
+          <a class="nav__egg" href="assets/art.md" aria-label="secret art cache"></a>
         </div>
-        <div class="col s3">
-          <a href="#projects" class="button block navy">projects</a>
+      </nav>
+      <div class="hero__inner">
+        <div class="hero__content" data-animate data-scroll-animate>
+          <p class="hero__intro">hi, i'm</p>
+          <h1 class="hero__name" aria-live="polite">
+            <span class="typewriter" data-typewriter>
+              <span id="name" data-type-text="alina cai"></span>
+              <span class="typewriter__cursor" aria-hidden="true"></span>
+            </span>
+          </h1>
+          <div class="hero__actions">
+            <a
+              class="pill pill--ghost"
+              href="https://linkedin.com/in/alina-cai"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              class="pill pill--ghost"
+              href="https://github.com/alina-cai"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
         </div>
-        <div class="col s3">
-          <a href="https://alina-cai.github.io/" class="button block navy" target="_blank">resume</a>
-        </div>        
-      </div>
-    </div>
-
-    <header class="bgimg display-container" id="home"> 
-      <div class="display-topmiddle center typewriter" style="margin-top: 18%">
-        <h1 id="name" class="text-white" style="font-size: 90px">alina cai</h1>
-        <div class="padding margin-top">
-          <a href="https://linkedin.com/in/alina-cai" class="button navy margin-right" target="_blank">
-            <i class="fa-brands fa-linkedin-in fa-beat"></i>
-          </a>
-          <a href="https://github.com/alina-cai" class="button navy" target="_blank">
-            <i class="fa-brands fa-github fa-beat"></i>
-          </a>          
+        <p class="hero__caption" data-layer="0.15">
+          taken aboard an alaskan cruise (2022)
+        </p>
+        <div class="scroll-indicator" aria-hidden="true" data-scroll-animate>
+          <span>scroll</span>
+          <i class="fa-solid fa-chevron-down"></i>
         </div>
-      </div>          
-      <div class="display-bottomright center padding-large">
-        <span class="text-white">taken aboard an Alaskan cruise (2022)</span>
-      </div>
-      <div class="chevron">
-        <a href="#about" class="xxlarge text-white" onClick="scrollIntoView('about')">
-          <i class="fas fa-chevron-down"></i>
-        </a>
       </div>
     </header>
 
-    <div class="pink grayscale large">
-      <div class="container" id="about">
-        <div class="content" style="max-width: 700px">
-          <h5 class="center padding-64">
-            <span class="tag wide blue-grey">about me</span>
-          </h5>
-          <div class="center-image-container">
-            <img src="/img/pfp.jpg" class="center-image margin-top" />
-          </div>
-          <p>
-            hi there! i'm alina, a computer science student at the university of waterloo. 
-            joining apple this summer building optimization models for icloud.
-          </p>
-          <p>  
-            prev @ uber (llms), microsoft (xbox tools), bluwave-ai (data sci)
-          </p>
-          <p><strong>semester:</strong> 3A (junior) </p>
-          <p><strong>current courses:</strong> macroeconomics </p>
-          <div class="panel leftbar blue-grey">
-            <p>my interests:</p>
-            <p>&gt; piano<br />&gt; violin<br />&gt; basketball<br />&gt; photography<br />&gt; video games<br />&gt; cars<br />&gt; trading<br />&gt; poker<br /></p>
+    <main>
+      <section class="section section--about" id="about">
+        <div class="section__heading" data-animate data-scroll-animate>
+          <p class="eyebrow">about me</p>
+          <h2>software engineer</h2>
+        </div>
+        <div class="section__grid">
+          <article class="card card--about" data-animate data-scroll-animate>
+            <p>
+              hello! i'm alina. i'm a junior at waterloo studying computer science.
+            </p>
+            <p>
+              a fun fact about me is that i got to play basketball at the chase center (nba court,
+              home of the golden state warriors) as part of a charity game. once in a lifetime
+              experience to have something in common with my goat steph curry!
+            </p>
+            <div class="course-list">
+              <p class="eyebrow">current courses</p>
+              <ul class="pill-list pill-list--compact">
+                <li>applied ml</li>
+                <li>graphics</li>
+                <li>databases</li>
+                <li>full-stack development</li>
+                <li>human computer interaction</li>
+                <li>music theory</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card card--hobbies" data-animate data-scroll-animate style="--delay: 0.12s">
+            <p class="eyebrow">hobbies</p>
+            <ul class="hobby-list">
+              <li>
+                <span class="hobby-list__label">piano</span>
+              </li>
+              <li>
+                <span class="hobby-list__label">basketball</span>
+              </li>
+              <li>
+                <span class="hobby-list__label">classical music</span>
+              </li>
+              <li>
+                <span class="hobby-list__label">photography</span>
+              </li>
+              <li>
+                <span class="hobby-list__label">video games</span>
+              </li>
+              <li>
+                <span class="hobby-list__label">cars</span>
+              </li>
+              <li>
+                <span class="hobby-list__label">poker</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--experience" id="experience">
+        <div class="section__heading experience-heading" data-animate data-scroll-animate>
+          <div>
+            <p class="eyebrow">experience</p>
+            <h2>internships & fellowships</h2>
+            <p>passionate about everything ml, data, and quant.</p>
           </div>
         </div>
-      </div>
+        <div class="timeline">
+          <article class="timeline__item" data-animate style="--delay: 0.05s">
+            <div class="timeline__dot"></div>
+            <div class="timeline__company">
+              <span class="timeline__company-name">citadel securities</span>
+              <div class="timeline__company-meta">
+                <span class="timeline__meta">jun 2026 - aug 2026 · new york city, new york</span>
+                <a class="timeline__company-link" href="https://www.citadelsecurities.com/" target="_blank" rel="noopener noreferrer">
+                  citadelsecurities.com
+                </a>
+              </div>
+            </div>
+            <h3>software engineer intern</h3>
+            <p>
+              incoming summer 2026!
+            </p>
+          </article>
 
-      <div class="container" id="projects">
-        <div class="content" style="max-width: 700px">
-          <h5 class="center padding-64">
-            <span class="tag wide blue-grey">projects</span>
-          </h5>
-          <h5><strong>digital art </strong><a href="https://github.com/alina-cai/alina-cai.github.io/blob/main/assets/art.md" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a></h5>
-          <i>adobe photoshop, adobe illustrator</i>
-          <p>
-            a collection of various art pieces that are super cool
-          </p>
-          <br />
-          <h5><strong>citadel | citadel securities | correlation-one women's datathon </strong><a href="https://github.com/alina-cai/citadel-datathon-feb" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a></h5>
-          <i>python, pandas, numpy, matplotlib, scikit-learn, latex</i>
-          <p>
-            quant research with mit students and an all-inclusive trip to miami
-          </p>
-          <br />
-          <h5><strong>citadel | citadel securities | correlation-one summer invitational datathon </strong><a href="https://github.com/alina-cai/citadel-datathon" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a></h5>
-          <i>python, xgboost, pandas, matplotlib, scikit-learn, google colab</i>
-          <p>
-            a quantitative research project about weather impact on air traffic
-          </p>
-          <br />
-          <h5><strong>citadel | citadel securities | correlation-one summer invitational terminal </strong><a href="https://github.com/Nathan13888/coke-zero-drinkers" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a></h5>
-          <i>python</i>
-          <p>
-            an AI tower defense model used to compete in a live esports competition
-          </p>
-          <br />
-          <h5><strong>league of legends champion randomizer </strong><a href="https://lolrandomizer.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a></h5>
-          <i>python, beautifulsoup, html, jupyter notebook</i>
-          <p>
-            a full-stack web app that selects a champion scraped from the LoL wiki
-          </p>
-          <br />
-          <h5><strong>portfolio website </strong><a href="https://alina-cai.github.io/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a></h5>
-          <i>html, css, javascript</i>
-          <p>
-            a personal website that you're on right now!
-          </p>
-          <br />
+          <article class="timeline__item" data-animate style="--delay: 0.08s">
+            <div class="timeline__dot"></div>
+            <div class="timeline__company">
+              <span class="timeline__company-name">optiver</span>
+              <div class="timeline__company-meta">
+                <span class="timeline__meta">jan 2026 - apr 2026 · chicago, illinois</span>
+                <a class="timeline__company-link" href="https://www.optiver.com/" target="_blank" rel="noopener noreferrer">
+                  optiver.com
+                </a>
+              </div>
+            </div>
+            <h3>software engineer intern</h3>
+            <p>
+              incoming winter 2026!
+            </p>
+          </article>
+
+          <article class="timeline__item" data-animate style="--delay: 0.11s">
+            <div class="timeline__dot"></div>
+            <div class="timeline__company">
+              <span class="timeline__company-name">apple</span>
+              <div class="timeline__company-meta">
+                <span class="timeline__meta">jun 2025 - sep 2025 · cupertino, california</span>
+                <a class="timeline__company-link" href="https://www.apple.com/" target="_blank" rel="noopener noreferrer">
+                  apple.com
+                </a>
+              </div>
+            </div>
+            <h3>software engineer intern</h3>
+            <p>
+              saved double-digit millions USD for icloud storage and presented project to VP
+            </p>
+            <ul class="pill-list pill-list--tight">
+              <li>python</li>
+              <li>sql</li>
+            </ul>
+          </article>
+
+          <article class="timeline__item" data-animate style="--delay: 0.11s">
+            <div class="timeline__dot"></div>
+            <div class="timeline__company">
+              <span class="timeline__company-name">jane street</span>
+              <div class="timeline__company-meta">
+                <span class="timeline__meta">aug 2025 · new york city, new york</span>
+                <a class="timeline__company-link" href="https://www.janestreet.com/" target="_blank" rel="noopener noreferrer">
+                  janestreet.com
+                </a>
+              </div>
+            </div>
+            <h3>insight program</h3>
+            <p>
+              1 of 24 students selected to ride camels for a week
+            </p>
+            <ul class="pill-list pill-list--tight">
+              <li>ocaml</li>
+            </ul>
+          </article>
+
+          <article class="timeline__item" data-animate style="--delay: 0.16s">
+            <div class="timeline__dot"></div>
+            <div class="timeline__company">
+              <span class="timeline__company-name">uber</span>
+              <div class="timeline__company-meta">
+                <span class="timeline__meta">may 2024 - aug 2024 · sunnyvale, california</span>
+                <a class="timeline__company-link" href="https://www.uber.com/" target="_blank" rel="noopener noreferrer">
+                  uber.com
+                </a>
+              </div>
+            </div>
+            <h3>software engineer intern</h3>
+            <p>
+              rode a lot of ubers and ordered a lot of uber eats
+            </p>
+            <ul class="pill-list pill-list--tight">
+              <li>python</li>
+              <li>javascript</li>
+            </ul>
+          </article>
+
+          <article class="timeline__item" data-animate style="--delay: 0.21s">
+            <div class="timeline__dot"></div>
+            <div class="timeline__company">
+              <span class="timeline__company-name">8vc</span>
+              <div class="timeline__company-meta">
+                <span class="timeline__meta">may 2024 - aug 2024 · san francisco, california</span>
+                <a class="timeline__company-link" href="https://www.8vc.com/" target="_blank" rel="noopener noreferrer">
+                  8vc.com
+                </a>
+              </div>
+            </div>
+            <h3>engineering fellow</h3>
+            <p>
+              1 of 30 in north america invited to explore venture capital and startup building
+            </p>
+          </article>
+
+          <article class="timeline__item" data-animate style="--delay: 0.26s">
+            <div class="timeline__dot"></div>
+            <div class="timeline__company">
+              <span class="timeline__company-name">microsoft</span>
+              <div class="timeline__company-meta">
+                <span class="timeline__meta">jan 2024 - may 2024 · vancouver, british columbia</span>
+                <a class="timeline__company-link" href="https://www.microsoft.com/" target="_blank" rel="noopener noreferrer">
+                  microsoft.com
+                </a>
+              </div>
+            </div>
+            <h3>software engineer intern</h3>
+            <p>
+              played a lot of xbox
+            </p>
+            <ul class="pill-list pill-list--tight">
+              <li>c++</li>
+              <li>python</li>
+              <li>.net</li>
+            </ul>
+          </article>
+
+          <article class="timeline__item" data-animate style="--delay: 0.31s">
+            <div class="timeline__dot"></div>
+            <div class="timeline__company">
+              <span class="timeline__company-name">bluwave-ai</span>
+              <div class="timeline__company-meta">
+                <span class="timeline__meta">may 2023 - aug 2023 · ottawa, ontario</span>
+                <a class="timeline__company-link" href="https://www.bluwave-ai.com/" target="_blank" rel="noopener noreferrer">
+                  bluwave-ai.com
+                </a>
+              </div>
+            </div>
+            <h3>software engineer intern</h3>
+            <p>
+              tried to predict california weather and energy usage
+            </p>
+            <ul class="pill-list pill-list--tight">
+              <li>python</li>
+              <li>java</li>
+            </ul>
+          </article>
         </div>
-      </div>
+      </section>
 
-      <footer class="center blue-grey padding-48 large">
-        <p>
-          contact me:
-          <div class="padding margin-top">
-            <a href="mailto:alina.cai@uwaterloo.ca" class="button pink margin-right">
-              <i class="far fa-envelope fa-shake"></i>
-            </a>
-            <a href="discord:acchm" class="button pink">
-              <i class="fab fa-discord fa-shake"></i>
-            </a>
-          </div>
-        </p>
-      </footer>
+      <section class="section section--contact" id="contact">
+        <div class="section__heading" data-animate>
+          <p class="eyebrow">contact</p>
+          <h2>reach out anytime</h2>
+          <p>
+            would love to connect!
+          </p>
+        </div>
+        <div class="contact-grid">
+          <a class="card contact-card" href="mailto:alina.cai@uwaterloo.ca" data-animate data-scroll-animate>
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <p class="eyebrow">email</p>
+              <h3>alina.cai@uwaterloo.ca</h3>
+            </div>
+          </a>
+          <a
+            class="card contact-card"
+            href="https://discord.com/users/acchm"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-animate
+            data-scroll-animate
+            style="--delay: 0.1s"
+          >
+            <i class="fa-brands fa-discord"></i>
+            <div>
+              <p class="eyebrow">discord</p>
+              <h3>@acchm</h3>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
 
-    <script src="js/script.js"></script>
+    <footer class="footer">
+      <p>made with lots of caffeine © 2025 alina cai</p>
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
