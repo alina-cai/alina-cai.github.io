@@ -63,6 +63,8 @@ animatedElements.forEach((el) => observer.observe(el));
 
 const layeredElements = document.querySelectorAll("[data-layer]");
 const kineticElements = document.querySelectorAll("[data-scroll-animate]");
+const navToggle = document.querySelector(".nav__toggle");
+const navLinks = document.getElementById("nav-links");
 let ticking = false;
 
 const runScrollEffects = () => {
@@ -101,6 +103,13 @@ window.addEventListener(
 
 window.addEventListener("resize", runScrollEffects);
 runScrollEffects();
+
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("is-open");
+    navToggle.setAttribute("aria-expanded", isOpen.toString());
+  });
+}
 
 const yearSpan = document.getElementById("year");
 if (yearSpan) {
